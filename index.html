@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" name="keywords" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>蠡湖Lab</title>
+    <link rel="shortcut icon" href="favicon.ico" />
+    <link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+    <div class="main">
+        <div class="head">
+            <div class="nav">
+                <div class="img"><a href="index.html"><img src="img/lihu.png" alt=""></a></div>
+                <ul>
+                    <li><a href="">前端教程</a></li>
+                    <li><a href="">后端教程</a></li>
+                    <li><a href="">aaa</a></li>
+                    <li class="navhidden"><a href="">bbb</a></li>
+                    <li class="navhidden"><a href="">ccc</a></li>
+                    <li class="navhidden"><a href="">ddd</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <div class="content">
+            
+            <div class="middle" id="middle"> 
+                <div class="title">
+                    <h2>Javascript</h2>
+                </div>
+                <div class="">
+                    <ul>
+                        <a href=""><li class="javascript">
+                            <div class="img"></div>
+                            <div class="text">
+                                <h3>javascript</h3>
+					            <p>javascript教程啊沙发松岛枫敖德萨发生的发安非艾佛森 发送</p>
+                            </div>
+                        </li></a>
+                        <a href=""><li class="DOM"></li></a>
+                        <a href=""><li class="jQuery"></li></a>
+                        <a href=""><li class="Angular JS"></li></a>
+                        <a href=""><li class="React"></li></a>
+                        <a href=""><li class="Node.js"></li></a>
+                        <a href=""><li class="AJAX"></li></a>
+                        <a href=""><li class=""></li></a>
+                        <a href=""><li class=""></li></a>
+                        <a href=""><li class=""></li></a>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="footer">
+            <div class="beian">Copyright © 2017 Lihu Lab All Rights Reserved 备案号：苏ICP备17029995号-1</div>
+            <div class="tongji"></div>
+        </div>
+    </div>
+<script type="text/javascript">
+    window.onload=function(){ 
+        changeDivWidth();  
+    }
+    //当浏览器窗口大小改变时，设置显示内容的高度  
+    window.onresize=function(){  
+        changeDivWidth();  
+    }  
+    function changeDivWidth(){
+        var middle = document.getElementById("middle");
+        var block = middle.getElementsByTagName("a");
+        var height=0;
+        // alert(middle.offsetWidth);
+        if(screen.width>=960){
+            var width = (middle.offsetWidth-80)/4;
+            height = 100;
+        }
+        else if(screen.width>=600){
+            var width = (middle.offsetWidth-80)/3;
+            height = 100;
+        }
+        else if(screen.width>=450){
+            var width = (middle.offsetWidth-80)/2;
+            height = 100;
+        }
+        else{
+            var width = (middle.offsetWidth-80)/3;
+            height = 45;
+        }      
+        // alert(width);
+        for(var i = block.length-1; i>=0; i--){
+            block[i].style.width = width + 'px';
+            block[i].style.height = height + 'px';
+        }
+    }
+</script>
+</body>
+</html>
