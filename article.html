@@ -6,6 +6,15 @@
     <title>蠡湖Lab</title>
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" type="text/css" href="article.css">
+    <script>
+        var _hmt = _hmt || [];
+        (function() {
+            var hm = document.createElement("script");
+            hm.src = "https://hm.baidu.com/hm.js?1b1125fd8ebbf74cdbdfc82961d578ee";
+            var s = document.getElementsByTagName("script")[0]; 
+            s.parentNode.insertBefore(hm, s);
+        })();
+    </script>
 </head>
 <body>
     <div class="main">
@@ -61,11 +70,37 @@
             </div>
             
             <div class="middle" id="middle"> 
-                <h1>HTML 教程- (HTML5 标准)</h1>
-                超文本标记语言（英语：HyperText Markup Language，简称：HTML）是一种用于创建网页的标准标记语言。
-                您可以使用 HTML 来建立自己的 WEB 站点，HTML 运行在浏览器上，由浏览器来解析。
-                在本教程中，您将学习如何使用 HTML 来创建站点。
-                HTML 很容易学习！相信您能很快学会它！
+                <div class="link">
+                    <div class="previous"><a href="">上一篇</a></div>
+                    <div class="next"><a href="">下一篇</a></div>
+                </div>
+                <div class="tutorial">
+                    <h1>HTML 教程- (HTML5 标准)</h1>
+                    <p>超文本标记语言（英语：HyperText Markup Language，简称：HTML）是一种用于创建网页的标准标记语言。
+                    您可以使用 HTML 来建立自己的 WEB 站点，HTML 运行在浏览器上，由浏览器来解析。
+                    在本教程中，您将学习如何使用 HTML 来创建站点。
+                    HTML 很容易学习！相信您能很快学会它！</p>
+                    <h6>实例</h6>
+                    <pre> 
+                        <code>
+                            &lt;!DOCTYPE html&gt;
+                            &lt;html&gt;
+                            &lt;head&gt;
+                            &lt;meta charset="utf-8"&gt;
+                            &lt;title>菜鸟教程(runoob.com)&lt;/title&gt;
+                            &lt;/head&gt;
+                            &lt;body>
+                                &lt;h1>我的第一个标题&lt;/h1&gt;
+                                &lt;p&gt;我的第一个段落。&lt;/p&gt;
+                            &lt;/body&gt;
+                            &lt;/html&gt;
+                        </code>
+                    </pre>
+                </div>
+                <div class="link">
+                    <div class="previous"><a href="">上一篇</a></div>
+                    <div class="next"><a href="">下一篇</a></div>
+                </div>
             </div>
 
         </div>
@@ -91,7 +126,7 @@ window.onload = function(){
         oTop.style.top = screenh - oTop.offsetHeight + scrolltop +"px";
     }
     oTop.onclick = function(){
-    document.documentElement.scrollTop = document.body.scrollTop =0;
+        document.documentElement.scrollTop = document.body.scrollTop = 0;
     }
 }  
 </script>
