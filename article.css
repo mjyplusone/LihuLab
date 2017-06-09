@@ -17,9 +17,9 @@ a{color: #333; text-decoration: none;}
 
 .clearfix{width: 100%; height: 50px;}
 
-.content{width: 1100px; margin: 0 auto;}
+.content{width: 1100px; margin: 0 auto; overflow: hidden;}
 
-.left{width: 180px; float: left; background: #fff; height: 1000px;
+.left{width: 180px; float: left; background: #fff; height: 1000px; padding-bottom: 9999px; margin-bottom: -9999px;
     /*box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);*/}
 .left .menu_header {background: #4B4F55; border-bottom: 1px solid #353A40;}
 .left .menu_title {font-size: 12px; color: #fff; padding: 15px; text-shadow: 0 1px 0 rgba(0, 0, 0, 0.4);}
@@ -35,7 +35,7 @@ a{color: #333; text-decoration: none;}
     margin-top: -6px; border-top: 6px solid transparent; border-bottom: 6px solid transparent; border-left: 6px solid #718d1f;
 }
 /*#6E757F 灰色三角*/
-.middle{background: #fff; height: 975px; margin: 0 195px 0 180px; border: 1px solid #d3d3d3; padding: 15px 15px;}
+.middle{background: #fff; margin: 0 195px 0 180px; border: 1px solid #d3d3d3; padding: 15px 15px; padding-bottom: 9999px; margin-bottom: -9999px;}
 .middle .link{width: 100%; height: 30px; border-bottom: 1px solid #F0F0F0; border-top: 1px solid #F0F0F0;}
 .middle .link .previous{float: left; height: 20px; margin-top: 5px;}
 .middle .link .next{float: right; height: 20px; margin-top: 5px;}
@@ -43,7 +43,7 @@ a{color: #333; text-decoration: none;}
 .middle .link a:hover{text-decoration: underline;}
 .middle .tutorial{margin: 10px 0 20px 0;}
 
-.right{width: 180px; float: right; background: #fff; height: 1000px; border: 1px solid #d3d3d3; border-radius: 1px;}
+.right{width: 180px; float: right; background: #fff; border: 1px solid #d3d3d3; border-radius: 1px;}
 .right .update_title{font-size: 14px; padding: 15px; background: #f0f0f0;}
 .right .update_body a{display: block; padding: 10px 15px; color: #8B8E93; border-bottom: 1px solid #F0F0F0;}
 .right .update_body a:hover{color: black;}
